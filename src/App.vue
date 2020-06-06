@@ -25,7 +25,7 @@
               <router-link to="/Contacto">contacto</router-link>
             </li>
             <li class="nav-item" role="presentation">
-              <router-link to="/Post/Articulo">último post</router-link>
+              <router-link to="/Post/1">Último post</router-link>
             </li>
           </ul>
         </div>

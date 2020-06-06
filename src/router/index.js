@@ -25,23 +25,23 @@ Vue.use(VueRouter)
     name: 'SobreMi',
     component: SobreMi
   },
-{
-  path: '/*',
-  name: 'NotFound',
-  component: NotFound
-},
   {
-    path: '/Post',
+    path: '/Post/', 
     name: 'Post',
     component: Post,
-    Children: [
+    children: [
       {
-        path: '/Post/Articulo',
+        path: ':articulo',
         name: 'Articulo',
-        component: Articulo
+        component: Articulo,
       }
-    ]
-  }
+    ], 
+  },
+  {
+    path: '*',
+    name: 'NotFound',
+    component: NotFound
+  },
 ];
 
 const router = new VueRouter({

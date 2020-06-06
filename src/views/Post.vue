@@ -1,14 +1,8 @@
 <template>
-  <Articulo></Articulo>
+  <div>
+    <div>
+<router-view :to="{name: 'Articulo'}"></router-view>
+</div>
+    </div>
 </template>
 
-<script>
-import Articulo from "../components/Articulo";
-export default {
-  components: {
-    Articulo
-  }
-};
-</script>
-
-<style lang="scss" scoped></style>
